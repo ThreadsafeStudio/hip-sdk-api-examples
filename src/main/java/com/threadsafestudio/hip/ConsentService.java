@@ -11,10 +11,6 @@ import se.hip.sdk.api.operation.RegisterPdlConsent;
  * Created by pascal on 2017-01-11.
  */
 public class ConsentService {
-    public interface RequestExecutor {
-        Response execute();
-    }
-
     @Autowired
     private Api api;
 

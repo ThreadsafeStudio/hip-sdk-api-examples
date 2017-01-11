@@ -89,6 +89,11 @@
             <artifactId>carelisting-service</artifactId>
             <version>2.1.8</version>
         </dependency>
+        <dependency>
+            <groupId>se.hip.sdk</groupId>
+            <artifactId>medication-history-service</artifactId>
+            <version>2.1.8</version>
+        </dependency>
 
     </dependencies>
 

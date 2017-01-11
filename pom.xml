@@ -94,6 +94,11 @@
             <artifactId>medication-history-service</artifactId>
             <version>2.1.8</version>
         </dependency>
+        <dependency>
+            <groupId>se.hip.sdk</groupId>
+            <artifactId>druglist-service</artifactId>
+            <version>2.1.8</version>
+        </dependency>
 
     </dependencies>
 

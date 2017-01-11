@@ -6,12 +6,17 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jms.activemq.ActiveMQAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.annotation.Bean;
 import se.hip.sdk.bootstrap.Hip;
 import se.hip.sdk.listener.PropertyListener;
 
 @EnableAutoConfiguration(exclude = {CamelAutoConfiguration.class, ActiveMQAutoConfiguration.class})
 @SpringBootApplication
 public class DemoApplication {
+	@Bean
+	public ConsentService consentService() {
+		return new ConsentService();
+	}
 
 	public static void main(String[] args) {
 		final SpringApplicationBuilder builder = new SpringApplicationBuilder();

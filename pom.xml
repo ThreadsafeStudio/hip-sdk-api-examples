@@ -119,6 +119,11 @@
             <artifactId>vaccination-service</artifactId>
             <version>2.1.8</version>
         </dependency>
+        <dependency>
+            <groupId>se.hip.sdk</groupId>
+            <artifactId>careplans-service</artifactId>
+            <version>2.1.8</version>
+        </dependency>
 
     </dependencies>
 

@@ -29,8 +29,9 @@ public class DrugListController {
     @RequestMapping("/druglist")
     @ResponseBody
     public Response<DataResultSet<Drug>> careDocumentation() {
-        boolean consentPosted = consentService.postDruglistConsent();
-        if (consentPosted) {
+        boolean consentPosted = consentService.postConsent();
+        boolean drugListConsentPosted = consentService.postDruglistConsent();
+        if (consentPosted && drugListConsentPosted) {
             final GetDruglist request =
                     api.getOperationBuilder(GetDruglistBuilder.class)
                         .as(consentService.getDrugListCareActor())

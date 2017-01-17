@@ -15,6 +15,7 @@ import se.hip.sdk.service.api.impl.AlertInformationImpl;
 /**
  * Created by pascal on 2017-01-10.
  */
+/*
 @Controller
 public class AlertController {
     @Autowired
@@ -25,7 +26,7 @@ public class AlertController {
 
     @RequestMapping("/alert")
     @ResponseBody
-    public Response<DataResultSet<AlertInformationImpl>> careDocumentation() {
+    public Response<DataResultSet<AlertInformation>> careDocumentation() {
         boolean consentPosted = consentService.postConsent();
         if (consentPosted) {
             final GetAlertInformation request =
@@ -39,3 +40,4 @@ public class AlertController {
         }
     }
 }
+*/

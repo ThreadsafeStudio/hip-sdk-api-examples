@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import se.hip.sdk.api.Api;
 import se.hip.sdk.api.GetAlertInformationBuilder;
+import se.hip.sdk.api.alerts.AlertInformation;
 import se.hip.sdk.api.core.DefaultSubjectOfCare;
 import se.hip.sdk.api.core.Response;
 import se.hip.sdk.api.operation.GetAlertInformation;
@@ -15,7 +16,7 @@ import se.hip.sdk.service.api.impl.AlertInformationImpl;
 /**
  * Created by pascal on 2017-01-10.
  */
-/*
+
 @Controller
 public class AlertController {
     @Autowired
@@ -26,7 +27,7 @@ public class AlertController {
 
     @RequestMapping("/alert")
     @ResponseBody
-    public Response<DataResultSet<AlertInformation>> careDocumentation() {
+    public Response<DataResultSet<AlertInformationImpl>> careDocumentation() {
         boolean consentPosted = consentService.postConsent();
         if (consentPosted) {
             final GetAlertInformation request =
@@ -40,4 +41,3 @@ public class AlertController {
         }
     }
 }
-*/
